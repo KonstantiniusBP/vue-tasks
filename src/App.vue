@@ -2,10 +2,12 @@
     <!-- <profpic username="Konstantin Fridman"/> -->
     <!-- <Radiobuttons /> -->
     <!-- <Dropdown title="Fruits" img="bananas.svg" :options="['Apples', 'Pineaples', 'Watermelons']"/> -->
-    <numbersRow />
+    <!-- <numbersRow /> -->
+    <switcher type = "switcher-small" />
 </template>
 
 <script setup>
+import switcher from './components/switcher.vue';
 import numbersRow from './components/numbersRow.vue';
 import Numbers from './components/numbers.vue';
 import profpic from './components/profile-pic.vue'

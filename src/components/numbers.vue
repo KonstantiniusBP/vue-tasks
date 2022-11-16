@@ -1,9 +1,9 @@
 <template>
     <div class="container">
         <div class="elem">
-            <div class="elem1">{{copmNumber}}</div>
+            <div class="elem1">{{compNumber}}</div>
             <div class="elem2">
-                <input type="number">
+                <input type="number" placeholder="0">
             </div>
         </div>
     </div>
@@ -41,6 +41,9 @@ export default{
 *{
     font-family: 'Montserrat', sans-serif;
 }
+.container:last-child .elem1{
+    background: #B3A9E3;
+}
 .elem{
     display: flex;
     flex-direction: row;
@@ -56,8 +59,7 @@ export default{
     color: #FFFFFF;
 
     align-items: center;
-
-    background: #B3A9E3;
+    background: #7F3BD6;
     border-radius: 3px 0px 0px 3px;
 }
 
@@ -82,4 +84,5 @@ export default{
     background: none;
     border: none;
 }
+
 </style>

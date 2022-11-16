@@ -1,5 +1,7 @@
 <template>
-    <numbersVue v-for="n in 10" :comp-number="n"/>
+    <div class="row">
+        <numbersVue v-for="n in numbersCount" :comp-number="n"/>
+    </div>
 </template>
 
 
@@ -10,6 +12,7 @@ export default{
     name:"user-data",
     data(){
             return{
+                numbersCount: 1,
             }
     },
     props:{
@@ -29,5 +32,10 @@ export default{
 *{
     font-family: 'Montserrat', sans-serif;
 }
+.row{
+    display: flex;
+    flex-direction: row;
 
+    gap: 10px;
+}
 </style>
